@@ -106,13 +106,10 @@ if __name__ == "__main__":
             results = wikipedia.summary(query, sentences=2)
             speak("According to wikipedia")
             print(results)
-            speak(results)
+            speak(result)
 
-        elif 'ludo mod' in query:
-            ludo()
-
-        #elif 'alphabets' or 'alphabet' in query:
-            #alphabetss()  
+        elif 'alphabets' or 'alphabet' in query:
+            alphabetss()  
 
         elif 'youtube' in query:
             webbrowser.open("youtube.com")
