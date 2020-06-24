@@ -30,7 +30,7 @@ def wishMe():
         speak("Good Evening!")
 
     else:
-        speak("Its late sir, You should get some rest but still")
+        speak("Its late sir, but I am here.")
         
     speak("my name is Alpha. Please tell me how can I help you sir")
 
@@ -62,14 +62,14 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('mavericksamarth@gmail.com', 'Shinchan9450')
-    server.sendmail('mavericksamarth@gmail.com', to, content)
+    server.login('YourEmail@mail.com', 'YourPassword')
+    server.sendmail('YourEmail@mail.com', to, content)
     server.close()
     
 def alphabetss():
     alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     speak("Repeat after me")
-    speak("A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z")
+    speak(alphabets)
     speak("once again one by one")
     for i in alphabets:
         speak(i)
@@ -78,8 +78,8 @@ def alphabetss():
             speak("Try Again")
             aaaa = takeCommand().lower()
             speak("very good")
-            if 'stop' in aaaa:
-                break
+        if 'stop' in aaaa:
+            break
 
 def ludo():
     speak("Ludo mode activated, say 'roll' to roll the dice over, and 'exit' to stop ludo mode")
@@ -108,8 +108,8 @@ if __name__ == "__main__":
             print(results)
             speak(result)
 
-        elif 'alphabets' or 'alphabet' in query:
-            alphabetss()  
+        #elif 'alphabets' or 'alphabet' in query:
+            #alphabetss()  
 
         elif 'youtube' in query:
             webbrowser.open("youtube.com")
