@@ -5,3 +5,8 @@ An Artificial Intelligence Voice Assistant
 >> For example - 'Teach me Alphabets' or 'Open Youtube' or 'I want to code'
 >> To know anything from wikipedia just say " 'Your Topic' Wikipedia" for example 'Shahrukh Khan Wikipedia
 >> Enjoy
+
+Requirements 
+pip install speechrecognition
+pip install pyttsx3
+pip install wikipedia
